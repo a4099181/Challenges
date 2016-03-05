@@ -7,7 +7,7 @@ namespace Challenges.Challenges.Arrays
         internal static string Swap( string input, int firstBlockSize )
             => new string( Swap( input.ToCharArray(), firstBlockSize ) );
 
-        static char[] Swap( char[] input, int firstBlockSize )
+        internal static char[] Swap( char[] input, int firstBlockSize )
             =>
                 2 * firstBlockSize > input.Length
                     ? MoveBlockToLeft( input, firstBlockSize )
@@ -43,7 +43,7 @@ namespace Challenges.Challenges.Arrays
                 i < affectedRange.to;
                 i = i + blockSize )
             {
-                ReplaceWithPrevious( input, blockSize, i );
+                SwapWithPrevious( input, blockSize, i );
             }
 
             return freeBlockSize == 0
@@ -74,7 +74,7 @@ namespace Challenges.Challenges.Arrays
                 i > affectedRange.from;
                 i = i - blockSize )
             {
-                ReplaceWithPrevious( input, blockSize, i );
+                SwapWithPrevious( input, blockSize, i );
             }
 
             return freeBlockSize == 0
@@ -86,16 +86,16 @@ namespace Challenges.Challenges.Arrays
                     affectedRange.from + blockSize );
         }
 
-        static void ReplaceWithPrevious(
+        static void SwapWithPrevious(
             char[] input,
             int blockSize,
             int startAt )
         {
             for ( var j = 0; j < blockSize; j++ )
             {
-                var replacement = input[ startAt + j - blockSize ];
+                var swapIt = input[ startAt + j - blockSize ];
                 input[ startAt + j - blockSize ] = input[ startAt + j ];
-                input[ startAt + j ] = replacement;
+                input[ startAt + j ] = swapIt;
 
                 Debug.WriteLine( new string( input ).PadLeft( 15 ) );
             }
