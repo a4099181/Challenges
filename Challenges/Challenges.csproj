@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{ADC4C005-CD03-482C-A14D-7834163D3615}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Challenges</RootNamespace>
     <AssemblyName>Challenges</AssemblyName>
@@ -52,6 +52,8 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Benchmark.cs" />
+    <Compile Include="Benchmarks\Arrays\SwapBlocksBench.cs" />
     <Compile Include="Challenges\Linq\BeforeLastWithSum.cs" />
     <Compile Include="Challenges\Linq\BeforeLastWithAggregate.cs" />
     <Compile Include="Challenges\Linq\SwapBlocks.cs" />
