@@ -1,0 +1,3 @@
+[submodule "CodeStyles"]
+	path = CodeStyles
+	url = https://github.com/a4099181/CodeStyles.git
