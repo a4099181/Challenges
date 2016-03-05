@@ -8,7 +8,9 @@ HostCLR=MS.NET 4.0.30319.42000, Arch=32-bit RELEASE
 Type=SwapBlocksBench  Mode=Throughput  
 
 ```
-                            Method |        Median |      StdDev |
----------------------------------- |-------------- |------------ |
-  SwapBlocksInOneMillionCharsArray | 4,394.4031 us | 258.0343 us |
- SwapBlocksInOneThousandCharsArray |     4.3157 us |   0.3205 us |
+                                 Method |         Median |        StdDev |
+--------------------------------------- |--------------- |-------------- |
+  SwapBlocksInOneMillionCharsArray_Linq | 25,881.6500 us | 1,498.0779 us |
+       SwapBlocksInOneMillionCharsArray |  3,569.3500 us |   154.3501 us |
+ SwapBlocksInOneThousandCharsArray_Linq |     25.1852 us |     1.0915 us |
+      SwapBlocksInOneThousandCharsArray |      3.5594 us |     0.1802 us |

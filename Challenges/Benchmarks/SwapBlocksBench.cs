@@ -1,6 +1,7 @@
 using System.Linq;
 using BenchmarkDotNet.Attributes;
-using Challenges.Challenges.Arrays;
+using arrays = Challenges.Challenges.Arrays;
+using linq = Challenges.Challenges.Linq;
 
 namespace Challenges.Benchmarks
 {
@@ -16,9 +17,19 @@ namespace Challenges.Benchmarks
         }
 
         [Benchmark]
-        public char[] SwapBlocksInOneMillionCharsArray() => SwapBlocks.Swap( _oneMillionChars, 4000 );
+        public char[] SwapBlocksInOneMillionCharsArray()
+            => arrays.SwapBlocks.Swap( _oneMillionChars, 4000 );
 
         [Benchmark]
-        public char[] SwapBlocksInOneThousandCharsArray() => SwapBlocks.Swap( _oneThousandChars, 40 );
+        public char[] SwapBlocksInOneThousandCharsArray()
+            => arrays.SwapBlocks.Swap( _oneThousandChars, 40 );
+
+        [Benchmark]
+        public char[] SwapBlocksInOneMillionCharsArray_Linq()
+            => linq.SwapBlocks.Swap( _oneMillionChars, 4000 );
+
+        [Benchmark]
+        public char[] SwapBlocksInOneThousandCharsArray_Linq()
+            => linq.SwapBlocks.Swap( _oneThousandChars, 40 );
     }
 }

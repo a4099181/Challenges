@@ -7,7 +7,7 @@ namespace Challenges.Challenges.Linq
         internal static string Swap( string input, int n )
             => new string( Swap( input.ToCharArray(), n ) );
 
-        static char[] Swap( char[] array, int n )
+        internal static char[] Swap( char[] array, int n )
             => array.Skip( n ).Concat( array.Take( n ) ).ToArray();
     }
 }
