@@ -86,16 +86,20 @@ namespace Challenges.Challenges.Arrays
                     affectedRange.from + blockSize );
         }
 
-        static void SwapWithPrevious(
+        static unsafe void SwapWithPrevious(
             char[] input,
             int blockSize,
             int startAt )
         {
             for ( var j = 0; j < blockSize; j++ )
             {
-                var swapIt = input[ startAt + j - blockSize ];
-                input[ startAt + j - blockSize ] = input[ startAt + j ];
-                input[ startAt + j ] = swapIt;
+                fixed ( char* swap = &input[ startAt + j ]
+                    , with = &input[ startAt + j - blockSize ] )
+                {
+                    var cache = *swap;
+                    *swap = *with;
+                    *with = cache;
+                }
 
                 Debug.WriteLine( new string( input ).PadLeft( 15 ) );
             }

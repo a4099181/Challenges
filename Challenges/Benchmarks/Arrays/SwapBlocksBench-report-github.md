@@ -10,5 +10,5 @@ Type=SwapBlocksBench  Mode=Throughput
 ```
                             Method |        Median |      StdDev |
 ---------------------------------- |-------------- |------------ |
-  SwapBlocksInOneMillionCharsArray | 7,171.0645 us | 357.0842 us |
- SwapBlocksInOneThousandCharsArray |     6.2900 us |   0.4269 us |
+  SwapBlocksInOneMillionCharsArray | 4,394.4031 us | 258.0343 us |
+ SwapBlocksInOneThousandCharsArray |     4.3157 us |   0.3205 us |
