@@ -55,7 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Benchmark.cs" />
-    <Compile Include="Benchmarks\Arrays\SwapBlocksBench.cs" />
+    <Compile Include="Benchmarks\SwapBlocksBench.cs" />
     <Compile Include="Challenges\Linq\BeforeLastWithSum.cs" />
     <Compile Include="Challenges\Linq\BeforeLastWithAggregate.cs" />
     <Compile Include="Challenges\Linq\SwapBlocks.cs" />

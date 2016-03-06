@@ -2,7 +2,7 @@ using System.Linq;
 using BenchmarkDotNet.Attributes;
 using Challenges.Challenges.Arrays;
 
-namespace Challenges.Benchmarks.Arrays
+namespace Challenges.Benchmarks
 {
     public class SwapBlocksBench
     {

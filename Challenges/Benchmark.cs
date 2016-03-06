@@ -1,5 +1,5 @@
 ﻿using BenchmarkDotNet.Running;
-using Challenges.Benchmarks.Arrays;
+using Challenges.Benchmarks;
 
 namespace Challenges
 {
