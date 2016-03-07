@@ -56,11 +56,13 @@
   <ItemGroup>
     <Compile Include="Benchmark.cs" />
     <Compile Include="Benchmarks\SwapBlocksBench.cs" />
+    <Compile Include="Challenges\Arrays\SwapBlocksMta.cs" />
     <Compile Include="Challenges\Linq\BeforeLastWithSum.cs" />
     <Compile Include="Challenges\Linq\BeforeLastWithAggregate.cs" />
     <Compile Include="Challenges\Linq\SwapBlocks.cs" />
     <Compile Include="Challenges\Arrays\SwapBlocks.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tests\Arrays\SwapBlocksMtaSpec.cs" />
     <Compile Include="Tests\Linq\BeforeLastWithSumSpec.cs" />
     <Compile Include="Tests\Linq\BeforeLastWithAggregateSpec.cs" />
     <Compile Include="Tests\Arrays\SwapBlocksSpec.cs" />

@@ -25,6 +25,14 @@ namespace Challenges.Benchmarks
             => arrays.SwapBlocks.Swap( _oneThousandChars, 40 );
 
         [Benchmark]
+        public char[] SwapBlocksInOneMillionCharsArray_Mta()
+            => arrays.SwapBlocksMta.Swap( _oneMillionChars, 4000 );
+
+        [Benchmark]
+        public char[] SwapBlocksInOneThousandCharsArray_Mta()
+            => arrays.SwapBlocksMta.Swap( _oneThousandChars, 40 );
+
+        [Benchmark]
         public char[] SwapBlocksInOneMillionCharsArray_Linq()
             => linq.SwapBlocks.Swap( _oneMillionChars, 4000 );
 
