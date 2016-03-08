@@ -17,12 +17,12 @@ namespace Challenges.Benchmarks
         }
 
         [Benchmark]
-        public char[] SwapBlocksInOneMillionCharsArray()
-            => arrays.SwapBlocks.Swap( _oneMillionChars, 4000 );
+        public char[] SwapBlocksInOneMillionCharsArray_Unsafe()
+            => arrays.SwapBlocksUnsafe.Swap( _oneMillionChars, 4000 );
 
         [Benchmark]
-        public char[] SwapBlocksInOneThousandCharsArray()
-            => arrays.SwapBlocks.Swap( _oneThousandChars, 40 );
+        public char[] SwapBlocksInOneThousandCharsArray_Unsafe()
+            => arrays.SwapBlocksUnsafe.Swap( _oneThousandChars, 40 );
 
         [Benchmark]
         public char[] SwapBlocksInOneMillionCharsArray_Mta()

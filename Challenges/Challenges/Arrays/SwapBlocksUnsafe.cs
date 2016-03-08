@@ -2,7 +2,7 @@
 
 namespace Challenges.Challenges.Arrays
 {
-    class SwapBlocks
+    class SwapBlocksUnsafe
     {
         internal static string Swap( string input, int firstBlockSize )
             => new string( Swap( input.ToCharArray(), firstBlockSize ) );

@@ -3,16 +3,16 @@ using Machine.Specifications;
 
 namespace Challenges.Tests.Arrays
 {
-    [Subject( typeof ( SwapBlocks ) )]
-    class SwapBlocksSpec
+    [Subject( typeof ( SwapBlocksUnsafe ) )]
+    class SwapBlocksUnsafeSpec
     {
         Because _of = () =>
         {
-            _joeCameron = SwapBlocks.Swap( "JoeCameron", 3 );
-            _jamesBlack = SwapBlocks.Swap( "JamesBlack", 5 );
-            _joeWilderman = SwapBlocks.Swap( "JoeWilderman", 3 );
-            _jonathanDoe = SwapBlocks.Swap( "JonathanDoe", 8 );
-            _jamesBond = SwapBlocks.Swap( "JamesBond", 5 );
+            _joeCameron = SwapBlocksUnsafe.Swap( "JoeCameron", 3 );
+            _jamesBlack = SwapBlocksUnsafe.Swap( "JamesBlack", 5 );
+            _joeWilderman = SwapBlocksUnsafe.Swap( "JoeWilderman", 3 );
+            _jonathanDoe = SwapBlocksUnsafe.Swap( "JonathanDoe", 8 );
+            _jamesBond = SwapBlocksUnsafe.Swap( "JamesBond", 5 );
         };
 
         It _swappedJamesBlackShouldBeBlackJames =
