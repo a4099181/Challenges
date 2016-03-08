@@ -8,13 +8,15 @@ HostCLR=MS.NET 4.0.30319.42000, Arch=32-bit RELEASE
 Type=SwapBlocksBench  Mode=Throughput  
 
 ```
-                                   Method |         Median |        StdDev |
------------------------------------------ |--------------- |-------------- |
-    SwapBlocksInOneMillionCharsArray_Linq | 24,418.2938 us | 1,412.9228 us |
-     SwapBlocksInOneMillionCharsArray_Mta |  1,948.3547 us |   149.3281 us |
-         SwapBlocksInOneMillionCharsArray |  3,869.6086 us |   153.6214 us |
-  SwapBlocksInOneMillionCharsArray_Unsafe |  3,333.0418 us |   135.9808 us |
-   SwapBlocksInOneThousandCharsArray_Linq |     23.5428 us |     0.7585 us |
-    SwapBlocksInOneThousandCharsArray_Mta |     10.9949 us |     0.6794 us |
-        SwapBlocksInOneThousandCharsArray |      4.3223 us |     0.1596 us |
- SwapBlocksInOneThousandCharsArray_Unsafe |      3.4050 us |     0.1059 us |
+                                          Method |             Median |            StdDev |
+------------------------------------------------ |------------------- |------------------ |
+           SwapBlocksInOneMillionCharsArray_Linq | 23,351,962.5000 ns | 1,033,045.8826 ns |
+            SwapBlocksInOneMillionCharsArray_Mta |  1,836,542.1875 ns |   113,939.3598 ns |
+                SwapBlocksInOneMillionCharsArray |  3,685,789.0625 ns |   159,223.0523 ns |
+  SwapBlocksInOneMillionCharsArray_TripleReverse |    862,001.7578 ns |    41,358.2216 ns |
+         SwapBlocksInOneMillionCharsArray_Unsafe |  3,116,211.3281 ns |    65,640.4489 ns |
+          SwapBlocksInOneThousandCharsArray_Linq |     22,715.8417 ns |       624.7505 ns |
+           SwapBlocksInOneThousandCharsArray_Mta |     11,289.8590 ns |       634.0909 ns |
+               SwapBlocksInOneThousandCharsArray |      3,947.2153 ns |       140.7489 ns |
+ SwapBlocksInOneThousandCharsArray_TripleReverse |        965.7844 ns |        35.1673 ns |
+        SwapBlocksInOneThousandCharsArray_Unsafe |      3,332.1882 ns |       250.7237 ns |
