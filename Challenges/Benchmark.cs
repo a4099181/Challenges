@@ -7,9 +7,6 @@ namespace Challenges
     static class Benchmark
     {
         [MTAThread]
-        static void Main()
-        {
-            BenchmarkRunner.Run<SwapBlocksBench>();
-        }
+        static void Main() => BenchmarkRunner.Run<IfVsDictBlocksBench>();
     }
 }

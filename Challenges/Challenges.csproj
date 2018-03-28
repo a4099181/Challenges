@@ -150,6 +150,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Benchmark.cs" />
+    <Compile Include="Challenges\IfVsDict.cs" />
+    <Compile Include="Benchmarks\IfVsDictBlocksBench.cs" />
     <Compile Include="Benchmarks\SwapBlocksBench.cs" />
     <Compile Include="Challenges\Arrays\SwapBlocksParallel.cs" />
     <Compile Include="Challenges\Arrays\SwapBlocksTripleReverse.cs" />
